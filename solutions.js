@@ -57,23 +57,23 @@ oddNumberCount(16)
 // Example expected output:
 
 // trollsBeGone("This website is for losers LOL") // => returns "Ths wbst s fr lsrs LL"
-let newcomment = [] //creating a new array so I can manipulate the letters in an array
-const comment = (comment) => { {   //created a function to get the comment into an array 
-        newcomment.push(comment) //this line pushes the comment into an array
-} 
-    { 
-    console.log(newcomment)}//this line shows the comment in the array
-}
-const newComment = (newcomment) => { //this function lets me separate the comment character by character
-   let troll = newcomment.split('') //this splits up each individual letter into it's own index
-        console.log(troll) //this line shows the comment split up by each letter
-    } 
+// let newcomment = [] //creating a new array so I can manipulate the letters in an array
+// const comment = (comment) => { {   //created a function to get the comment into an array 
+//         newcomment.push(comment) //this line pushes the comment into an array
+// } 
+//     { 
+//     console.log(newcomment)}//this line shows the comment in the array
+// }
+// const newComment = (newcomment) => { //this function lets me separate the comment character by character
+//    let troll = newcomment.split('') //this splits up each individual letter into it's own index
+//         console.log(troll) //this line shows the comment split up by each letter
+//     } 
 const trollsBeGone = (troll) => { //this function takes the troll array and replaces vowels with the empty space.
-    let trollcomment = troll.replace(/[aeiouAEIOU]/g,'') //this line replaced each of the letters, but joined the phrase back without me having to use another function to join the indeces.
+    let trollcomment = troll.replace(/[aeiou]/gi,'') //this line replaced each of the letters, but joined the phrase back without me having to use another function to join the indeces.
     console.log(trollcomment) //this line shows the new comment 
 }
-comment("This website is for losers LOL")
-newComment("This website is for losers LOL")
+// comment("This website is for losers LOL")
+// newComment("This website is for losers LOL")
 trollsBeGone("This website is for losers LOL")
 
 // Make an object named bankInfo with your banking info that includes the keys listed below. Each key should have a number value that can either be negative or positive (e.g. -500 or 500)
