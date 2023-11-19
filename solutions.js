@@ -30,3 +30,21 @@ setAlarm(true, true)
 setAlarm(false, false)
 setAlarm(false, true)
 setAlarm(true, false)
+
+//Count Odd Numbers
+//Write a function named oddNumberCount which receives one argument that should be a number. The function should return how many positive odd numbers there are below the number passed into the argument.
+
+//Example expected output:
+
+//oddNumberCount(7) // => returns 3 (because [1, 3, 5] are the positive odd numbers below 7)
+//oddNumberCount(16) // => returns 8 (because [1, 3, 5, 7, 9, 11, 13, 15] are the positive odd numbers below 7)
+let oddarray = []
+const oddNumberCount = (num) => {
+    for (let a = 1; a < num; a++) {
+        if (a % 2 === 1)
+     oddarray.push(a)
+    } {
+        console.log(oddarray.length)
+    }
+}
+oddNumberCount(16)
