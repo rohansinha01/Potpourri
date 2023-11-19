@@ -75,3 +75,46 @@ const trollsBeGone = (troll) => { //this function takes the troll array and repl
 comment("This website is for losers LOL")
 newComment("This website is for losers LOL")
 trollsBeGone("This website is for losers LOL")
+
+// Make an object named bankInfo with your banking info that includes the keys listed below. Each key should have a number value that can either be negative or positive (e.g. -500 or 500)
+
+// savings
+// checking
+// moneyMarket
+// creditCard
+// Write a function called bankAccountSummary that accepts your bankInfo object as an argument. The function should calculate the total of your bank account and return it.
+
+// Example expected output:
+
+// assume my bankInfo values are: 600, 800, 200, -2000
+// bankAccountSummary(bankInfo) // returns -400
+// Save your bankAccountSummary total to a variable called bankTotal
+
+// Write another function called inTheRed that accepts your bank account summary total (number) as an argument. The function should return true if your total is less than 0, and false otherwise.
+
+// Example expected output:
+
+// assume my bank total is -400
+// inTheRed(bankTotal) // returns true
+
+const bankInfo = { //adding in the object of the bankInfo
+    savings: 600,
+    checking: 800,
+    moneyMarket: 200,
+    creditCard: -2000
+}
+const bankAccountSummary = (bankInfo) => { //creating the function of bankAccountSummary 
+    bankTotal = (bankInfo.savings + bankInfo.checking + bankInfo.moneyMarket + bankInfo.creditCard) //bankTotal adds up the totals in bank info
+    console.log(bankTotal) //gives us the total
+} 
+
+const inTheRed = () => { //creating a function to see if the info is in the red
+    if(bankTotal < 0){ //if the bank total is less than 0
+        console.log(true) //log a true
+    } else { //if it doesn't
+        console.log(false) //log a false
+    }
+}
+    
+bankAccountSummary(bankInfo)
+inTheRed(bankTotal)
